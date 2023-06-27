@@ -3,13 +3,9 @@ import discord
 
 TOKEN = os.environ["DISCORD_BOT_TOKEN"]
 GUILD_ID = int(os.environ["KAMAKIRI_GUILD_ID"])
-# channel_testbot = os.environ['DISCORD_CHANNEL_TESTBOT']
 
 Intents = discord.Intents.all()
 client = discord.Client(intents=Intents)
-
-guild = ""
-testbot_channel = ""
 
 @client.event
 async def on_ready():
